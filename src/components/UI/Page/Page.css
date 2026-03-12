@@ -1,0 +1,68 @@
+.page {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 0 2rem 2rem 2rem;
+  box-sizing: border-box;
+  min-height: 0;
+  width: 100%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: var(--secondary-color);
+  border-top: 2px solid var(--highlight-color);
+  border-left: 2px solid var(--highlight-color);
+}
+
+.page-title {
+  font-size: 3rem;
+  text-align: center;
+  padding: 2rem 0;
+  background-color: var(--secondary-color);
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  min-height: 0;
+  width: 100%;
+  padding-bottom: 2rem;
+  box-sizing: border-box;
+  background-color: var(--secondary-color);
+}
+
+.page-section {
+  display: flex;
+  padding: 2rem;
+  background-color: var(--highlight-color);
+  border-radius: 0.5rem;
+  border: 2px solid var(--primary-color);
+  flex-direction: column;
+  align-items: center;
+}
+
+.page::-webkit-scrollbar {
+  width: 10px;
+}
+
+.page::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.page::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 999px;
+  border: 2px solid transparent;
+}
+
+.page {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) transparent;
+}
+
+
+.page-end-spacer {
+  height: 3rem;
+  flex: 0 0 auto;
+}

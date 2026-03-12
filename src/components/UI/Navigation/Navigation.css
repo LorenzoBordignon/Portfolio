@@ -1,0 +1,48 @@
+.nav {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 10rem;
+  box-sizing: border-box;
+  padding: 4rem 1rem 1rem 1rem;
+  gap: 1.5rem;
+}
+
+.nav-title {
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--highlight-color);
+}
+
+.nav-page-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.nav-page a {
+  display: block;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid transparent;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  color: inherit;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.nav-page a:hover {
+  cursor: pointer;
+  opacity: 0.95;
+  transform: translateX(2px);
+  background-color: rgba(218, 213, 183, 0.08);
+  border-color: rgba(218, 213, 183, 0.22);
+}
+
+.nav-page-disabled a {
+  opacity: 0.6;
+}

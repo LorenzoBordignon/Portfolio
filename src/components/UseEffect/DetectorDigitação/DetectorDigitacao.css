@@ -1,0 +1,19 @@
+.detector-digitacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--primary-color);
+  gap: 1rem;
+}
+
+.detector-digitacao h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.detector-digitacao__insert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}

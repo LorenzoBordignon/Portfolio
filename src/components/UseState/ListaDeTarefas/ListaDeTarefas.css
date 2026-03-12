@@ -1,0 +1,47 @@
+.lista-tarefas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.lista-tarefas h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.lista-tarefas__content {
+  display: flex;
+  gap: 3rem;
+}
+
+.lista-tarefas__insert {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.lista-tarefas__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.lista-tarefas__list-item {
+  color: var(--primary-color);
+  display: flex;
+  gap: 1rem;
+  justify-content: start;
+  align-items: center;
+}
+
+.tarefa-concluida {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.btn-remover {
+  width: 2rem;
+}

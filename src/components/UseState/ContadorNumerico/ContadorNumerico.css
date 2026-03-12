@@ -1,0 +1,25 @@
+.contador-numerico__contagem {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.contador-numerico__btn-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.contador-numerico h3 {
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.contador-numerico {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}

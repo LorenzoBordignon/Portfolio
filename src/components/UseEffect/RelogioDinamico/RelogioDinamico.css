@@ -1,0 +1,12 @@
+.relogio-dinamico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--primary-color);
+  gap: 1rem;
+}
+
+.relogio-dinamico h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}

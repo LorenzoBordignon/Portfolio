@@ -1,0 +1,23 @@
+.nome-armazenado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nome-armazenado h3 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.nome-armazenado__insert {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.nome-armazenado p {
+  color: var(--primary-color);
+}
