@@ -18,6 +18,7 @@ export function NomeArmazenado() {
           onChange={(e) => setNome(e.target.value)}
         />
       </div>
+      <button>Guardar Nome</button>
       <p>Olá {nome}</p>
     </div>
   );
