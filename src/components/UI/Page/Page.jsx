@@ -14,7 +14,11 @@ export function Page() {
         <h2 className="page-title" id="use-state">
           Início
         </h2>
-        <section className="page-section"></section>
+        <section className="page-section">
+          <div className="description">
+            Olá, me chamo Lorenzo e teho 18 anos
+          </div>
+        </section>
         <h2 className="page-title" id="use-state">
           UseState
         </h2>
