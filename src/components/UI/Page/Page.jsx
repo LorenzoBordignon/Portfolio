@@ -10,10 +10,14 @@ import { NomeArmazenado } from "../../UseEffect/NomeArmazenado/NomeArmazenado";
 export function Page() {
   return (
     <div className="page">
-      <h2 className="page-title" id="use-state">
-        UseState
-      </h2>
       <div className="page-content">
+        <h2 className="page-title" id="use-state">
+          Início
+        </h2>
+        <section className="page-section"></section>
+        <h2 className="page-title" id="use-state">
+          UseState
+        </h2>
         <section className="page-section">
           <ContadorNumerico />
         </section>
