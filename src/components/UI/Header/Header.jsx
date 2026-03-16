@@ -1,7 +1,7 @@
 import { GiHamburgerMenu } from "react-icons/gi";
 import "./Header.css";
 
-export function Header({ isMenuOpen, onToggleMenu }) {
+export function Header({ isMenuOpen, onToggleMenu, nomePortfolio }) {
   return (
     <header className="header">
       <button
@@ -10,11 +10,11 @@ export function Header({ isMenuOpen, onToggleMenu }) {
         onClick={onToggleMenu}
         aria-expanded={isMenuOpen}
         aria-controls="nav-page-group"
-        aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
+        title={isMenuOpen ? "Fechar menu" : "Abrir menu"}
       >
         <GiHamburgerMenu />
       </button>
-      Portfólio Lorenzo
+      {nomePortfolio}
     </header>
   );
 }

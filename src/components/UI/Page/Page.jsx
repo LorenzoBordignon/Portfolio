@@ -8,53 +8,39 @@ import { RelogioDinamico } from "../../UseEffect/RelogioDinamico/RelogioDInamico
 import { NomeArmazenado } from "../../UseEffect/NomeArmazenado/NomeArmazenado";
 import { Biografia } from "../../Outros/Biografia/Biografia";
 import { Formacoes } from "../../Outros/Formacoes/Formacoes";
+import { PageSectionGroup } from "./PageSectionGroup";
 
 export function Page() {
   return (
     <div className="page">
       <div className="page-content">
-        <div className="page-content-group" id="inicio">
-          <h2 className="page-title" id="sobre-mim">
-            Sobre Mim
-          </h2>
-          <section className="page-section">
-            <Biografia />
-          </section>
-          <section className="page-section">
-            <Formacoes />
-          </section>
-        </div>
-        <div className="page-content-group" id="react-hooks">
-          <h2 className="page-title" id="use-state">
-            UseState
-          </h2>
-          <section className="page-section">
-            <ContadorNumerico />
-          </section>
-          <section className="page-section">
-            <CampoNome />
-          </section>
-          <section className="page-section">
-            <ListaDeTarefas />
-          </section>
-          <section className="page-section">
-            <CarrinhoDeCompras />
-          </section>
-        </div>
-        <div className="page-content-group">
-          <h2 className="page-title" id="use-effect">
-            UseEffect
-          </h2>
-          <section className="page-section">
-            <DetectorDigitacao />
-          </section>
-          <section className="page-section">
-            <RelogioDinamico />
-          </section>
-          <section className="page-section">
-            <NomeArmazenado />
-          </section>
-        </div>
+        <PageSectionGroup
+          sectionGroupId="sobre-mim"
+          sectionGroupTitle="Sobre Mim"
+        >
+          <Biografia />
+          <Formacoes />
+        </PageSectionGroup>
+
+        <PageSectionGroup
+          sectionGroupId="use-state"
+          sectionGroupTitle="UseState"
+        >
+          <ContadorNumerico />
+          <CampoNome />
+          <ListaDeTarefas />
+          <CarrinhoDeCompras />
+        </PageSectionGroup>
+
+        <PageSectionGroup
+          sectionGroupId="use-effect"
+          sectionGroupTitle="UseEffect"
+        >
+          <DetectorDigitacao />
+          <RelogioDinamico />
+          <NomeArmazenado />
+        </PageSectionGroup>
+
         <div className="page-end-spacer" aria-hidden="true" />
       </div>
     </div>

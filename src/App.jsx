@@ -18,6 +18,7 @@ function App() {
       <Header
         isMenuOpen={isMenuOpen}
         onToggleMenu={() => setIsMenuOpen((currentState) => !currentState)}
+        nomePortfolio="Portfólio Lorenzo"
       />
       <Navigation isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
       <div className="main-page">
