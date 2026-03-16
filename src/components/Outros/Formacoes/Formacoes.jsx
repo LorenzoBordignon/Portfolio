@@ -1,4 +1,4 @@
-import "./formacoes.css";
+import "./Formacoes.css";
 
 export function Formacoes() {
   return (
