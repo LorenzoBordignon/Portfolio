@@ -2,7 +2,7 @@
   background-color: var(--background-color);
   color: var(--highlight-color);
   display: grid;
-  grid-template-columns: 10rem minmax(0, 1fr);
+  grid-template-columns: 0 minmax(0, 1fr);
   grid-template-rows: auto minmax(0, 1fr);
   grid-template-areas:
     "nav header"
@@ -13,12 +13,20 @@
   overflow: hidden;
 }
 
+.app-shell.app-shell-menu-open {
+  grid-template-columns: 12rem minmax(0, 1fr);
+}
+
 .app-shell .header {
   grid-area: header;
 }
 
 .app-shell .nav {
   grid-area: nav;
+}
+
+.app-shell.app-shell-menu-closed .page {
+  border-left: none;
 }
 
 .main-page {

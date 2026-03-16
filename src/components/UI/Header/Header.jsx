@@ -14,9 +14,7 @@ export function Header({ isMenuOpen, onToggleMenu }) {
       >
         <GiHamburgerMenu />
       </button>
-      <div className="logo">
-        <img src="/logo.svg" alt="Logo do portfolio" />
-      </div>
+      Portfólio Lorenzo
     </header>
   );
 }

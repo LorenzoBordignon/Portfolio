@@ -10,7 +10,11 @@ function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <section className="app-shell">
+    <section
+      className={`app-shell ${
+        isMenuOpen ? "app-shell-menu-open" : "app-shell-menu-closed"
+      }`}
+    >
       <Header
         isMenuOpen={isMenuOpen}
         onToggleMenu={() => setIsMenuOpen((currentState) => !currentState)}

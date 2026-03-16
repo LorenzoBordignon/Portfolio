@@ -16,7 +16,7 @@
 .page-title {
   font-size: clamp(2rem, 6vw, 3rem);
   text-align: center;
-  padding: 2rem 0;
+  padding: 2rem 0 0 0;
   background-color: var(--secondary-color);
 }
 
@@ -41,6 +41,12 @@
   align-items: center;
   width: 100%;
   box-sizing: border-box;
+}
+
+.page-content-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .page::-webkit-scrollbar {
