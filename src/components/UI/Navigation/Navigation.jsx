@@ -6,6 +6,9 @@ export function Navigation() {
       <p className="nav-title">React Hooks</p>
       <ul className="nav-page-group">
         <li className="nav-page">
+          <a href="#inicio">Início</a>
+        </li>
+        <li className="nav-page">
           <a href="#use-state">UseState</a>
         </li>
         <li className="nav-page">

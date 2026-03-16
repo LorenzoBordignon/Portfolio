@@ -6,18 +6,21 @@ import { ListaDeTarefas } from "../../UseState/ListaDeTarefas/ListaDeTarefas";
 import { DetectorDigitacao } from "../../UseEffect/DetectorDigitação/DetectorDigitação";
 import { RelogioDinamico } from "../../UseEffect/RelogioDinamico/RelogioDInamico";
 import { NomeArmazenado } from "../../UseEffect/NomeArmazenado/NomeArmazenado";
+import { Biografia } from "../../Outros/Biografia/Biografia";
+import { Formacoes } from "../../Outros/Formacoes/Formacoes";
 
 export function Page() {
   return (
     <div className="page">
       <div className="page-content">
-        <h2 className="page-title" id="use-state">
+        <h2 className="page-title" id="inicio">
           Início
         </h2>
         <section className="page-section">
-          <div className="description">
-            Olá, me chamo Lorenzo e teho 18 anos
-          </div>
+          <Biografia />
+        </section>
+        <section className="page-section">
+          <Formacoes />
         </section>
         <h2 className="page-title" id="use-state">
           UseState

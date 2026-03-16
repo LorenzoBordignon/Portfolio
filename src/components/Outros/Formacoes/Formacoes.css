@@ -1,0 +1,18 @@
+.formacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  color: var(--primary-color);
+}
+
+.formacoes h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.formacoes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
