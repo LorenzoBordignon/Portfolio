@@ -4,10 +4,11 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  width: 100%;
 }
 
 .lista-tarefas h3 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
   margin-bottom: 1rem;
   color: var(--primary-color);
 }
@@ -15,18 +16,23 @@
 .lista-tarefas__content {
   display: flex;
   gap: 3rem;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .lista-tarefas__insert {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: min(100%, 20rem);
 }
 
 .lista-tarefas__list {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: min(100%, 24rem);
 }
 
 .lista-tarefas__list-item {
@@ -44,4 +50,19 @@
 
 .btn-remover {
   width: 2rem;
+}
+
+@media (max-width: 768px) {
+  .lista-tarefas__content {
+    gap: 1.5rem;
+  }
+
+  .lista-tarefas__list-item {
+    gap: 0.75rem;
+  }
+
+  .btn-remover {
+    width: 2rem;
+    min-width: 2rem;
+  }
 }

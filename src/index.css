@@ -11,13 +11,16 @@
 html,
 body {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
   min-width: 320px;
   margin: 0;
+  height: 100%;
   overflow: hidden;
-  background-color: var(--primary-color);
+  overflow-x: hidden;
+  background-color: var(--background-color);
   color: var(--highlight-color);
 }
 
@@ -51,6 +54,7 @@ input {
   background-color: var(--secondary-color);
   border-radius: 0.5rem;
   color: #fff;
+  width: min(100%, 20rem);
 }
 
 input:focus {
@@ -59,4 +63,22 @@ input:focus {
 
 input::placeholder {
   color: var(--highlight-color);
+}
+
+p,
+span,
+li,
+label {
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 20rem;
+  }
 }

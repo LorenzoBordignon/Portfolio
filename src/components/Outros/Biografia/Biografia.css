@@ -4,9 +4,15 @@
   flex-direction: column;
   text-align: center;
   gap: 1rem;
+  width: 100%;
 }
 
 .biografia h3 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
   margin-bottom: 1rem;
+}
+
+.biografia p {
+  max-width: 42rem;
+  align-self: center;
 }

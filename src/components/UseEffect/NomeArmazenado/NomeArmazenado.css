@@ -3,11 +3,12 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  width: 100%;
 }
 
 .nome-armazenado h3 {
   color: var(--primary-color);
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
   margin-bottom: 1rem;
 }
 
@@ -16,6 +17,7 @@
   flex-direction: column;
   gap: 0.5rem;
   align-items: center;
+  width: min(100%, 20rem);
 }
 
 .nome-armazenado p {

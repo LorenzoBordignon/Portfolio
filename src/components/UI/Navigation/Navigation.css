@@ -4,7 +4,7 @@
   flex-direction: column;
   flex: 0 0 10rem;
   box-sizing: border-box;
-  padding: 4rem 1rem 1rem 1rem;
+  padding: 2rem 1rem 1rem 1rem;
   gap: 1.5rem;
 }
 
@@ -19,6 +19,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  min-width: 0;
 }
 
 .nav-page a {
@@ -45,4 +46,52 @@
 
 .nav-page-disabled a {
   opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: flex;
+    box-sizing: border-box;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    visibility: hidden;
+    width: 100%;
+    padding: 0 1rem;
+    gap: 0;
+    border-bottom-width: 0;
+    transition:
+      max-height 0.28s ease,
+      opacity 0.2s ease,
+      padding 0.28s ease,
+      border-bottom-width 0.28s ease,
+      visibility 0s linear 0.28s;
+    border-bottom: 2px solid var(--highlight-color);
+  }
+
+  .nav.nav-open {
+    max-height: 18rem;
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    padding: 1.5rem 1rem 1rem 1rem;
+    gap: 0.75rem;
+    border-bottom-width: 2px;
+    transition:
+      max-height 0.28s ease,
+      opacity 0.2s ease,
+      padding 0.28s ease,
+      border-bottom-width 0.28s ease,
+      visibility 0s linear 0s;
+  }
+
+  .nav-page-group {
+    display: flex;
+    width: 100%;
+  }
+
+  .nav-page a:hover {
+    transform: none;
+  }
 }

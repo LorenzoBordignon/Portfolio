@@ -10,12 +10,11 @@
   scroll-behavior: smooth;
   overflow-x: hidden;
   background-color: var(--secondary-color);
-  border-top: 2px solid var(--highlight-color);
   border-left: 2px solid var(--highlight-color);
 }
 
 .page-title {
-  font-size: 3rem;
+  font-size: clamp(2rem, 6vw, 3rem);
   text-align: center;
   padding: 2rem 0;
   background-color: var(--secondary-color);
@@ -40,6 +39,8 @@
   border: 2px solid var(--primary-color);
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .page::-webkit-scrollbar {
@@ -61,8 +62,32 @@
   scrollbar-color: var(--primary-color) transparent;
 }
 
-
 .page-end-spacer {
   height: 3rem;
   flex: 0 0 auto;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 0 1rem 1rem 1rem;
+    border-left: none;
+  }
+
+  .page-content {
+    gap: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .page-title {
+    padding: 1.25rem 0;
+  }
+
+  .page-section {
+    padding: 1.25rem 1rem;
+    align-items: stretch;
+  }
+
+  .page::-webkit-scrollbar {
+    width: 6px;
+  }
 }
