@@ -9,6 +9,8 @@ import { NomeArmazenado } from "../../UseEffect/NomeArmazenado/NomeArmazenado";
 import { Biografia } from "../../Outros/Biografia/Biografia";
 import { Formacoes } from "../../Outros/Formacoes/Formacoes";
 import { PageSectionGroup } from "./PageSectionGroup";
+import { NomeHerdado } from "../../UseContext/NomeHerdado/NomeHerdado";
+import { NomeHerdadoContext } from "../../../context/NomeHerdadoContext";
 
 export function Page() {
   return (
@@ -41,6 +43,16 @@ export function Page() {
           <NomeArmazenado />
         </PageSectionGroup>
 
+        <PageSectionGroup
+          sectionGroupId="use-context"
+          sectionGroupTitle="UseContext"
+        >
+          <NomeHerdadoContext.Provider
+            value={{ nome: "Lorenzo", stack: "React" }}
+          >
+            <NomeHerdado />
+          </NomeHerdadoContext.Provider>
+        </PageSectionGroup>
         <div className="page-end-spacer" aria-hidden="true" />
       </div>
     </div>

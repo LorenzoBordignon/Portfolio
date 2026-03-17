@@ -12,6 +12,7 @@ export function Navigation({ isOpen }) {
       <ul className="nav-page-group">
         <NavLink linkAddress="#use-state" linkName="UseState" />
         <NavLink linkAddress="#use-effect" linkName="UseEffect" />
+        <NavLink linkAddress="#use-context" linkName="UseContext" />
       </ul>
     </nav>
   );

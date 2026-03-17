@@ -8,7 +8,6 @@ import { Page } from "./components/UI/Page/Page";
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   return (
     <section
       className={`app-shell ${

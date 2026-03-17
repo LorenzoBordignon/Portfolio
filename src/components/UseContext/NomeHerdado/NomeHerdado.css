@@ -1,0 +1,12 @@
+.nome-herdado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  color: var(--primary-color);
+}
+
+.nome-herdado h3 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
