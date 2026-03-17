@@ -61,12 +61,16 @@ export function Page() {
           >
             <NomeHerdado />
           </NomeHerdadoContext.Provider>
-          <FormularioDeDadosContext
+          <FormularioDeDadosContext.Provider
             value={{ dadosFormulario, setDadosFormulario }}
           >
             <FormularioDeDados />
+          </FormularioDeDadosContext.Provider>
+          <FormularioDeDadosContext.Provider
+            value={{ dadosFormulario, setDadosFormulario }}
+          >
             <ExibicaoDeDados />
-          </FormularioDeDadosContext>
+          </FormularioDeDadosContext.Provider>
         </PageSectionGroup>
         <div className="page-end-spacer" aria-hidden="true" />
       </div>
