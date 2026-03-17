@@ -1,0 +1,18 @@
+.exibicao-dados {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: var(--primary-color);
+  align-items: center;
+}
+
+.exibicao-dados h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.exibicao-dados__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
