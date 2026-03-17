@@ -36,8 +36,34 @@
   flex-direction: column;
   min-width: 0;
   min-height: 0;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
   background-color: var(--secondary-color);
+  border-left: none;
+}
+
+.app-shell.app-shell-menu-open .main-page {
+  border-left: 2px solid var(--highlight-color);
+}
+
+.main-page::-webkit-scrollbar {
+  width: 10px;
+}
+
+.main-page::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.main-page::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 999px;
+  border: 2px solid transparent;
+}
+
+.main-page {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) transparent;
 }
 
 @media (max-width: 768px) {
@@ -52,8 +78,18 @@
     overflow: hidden;
   }
 
+  .app-shell.app-shell-menu-open {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
   .main-page {
     min-height: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-left: none;
+  }
+
+  .main-page::-webkit-scrollbar {
+    width: 6px;
   }
 }
