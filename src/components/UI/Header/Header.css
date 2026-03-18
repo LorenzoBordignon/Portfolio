@@ -7,14 +7,21 @@
   border-bottom: 2px solid var(--highlight-color);
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   position: sticky;
   top: 0;
   z-index: 20;
   gap: 1rem;
 }
 
-.header-menu-toggle {
+.header-title {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.header-menu-toggle,
+.header-logout-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
