@@ -68,7 +68,6 @@ input:focus {
 
 input::placeholder {
   color: var(--highlight-color);
-  opacity: 0.7;
 }
 
 p,
