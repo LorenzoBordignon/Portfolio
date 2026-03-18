@@ -78,6 +78,7 @@
   background-color: var(--highlight-color);
   border-radius: 0;
   color: var(--primary-color);
+  font-size: 1rem;
 }
 
 .login-content__form-field input::placeholder {
