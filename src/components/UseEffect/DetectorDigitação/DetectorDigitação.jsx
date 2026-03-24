@@ -18,7 +18,7 @@ export function DetectorDigitacao() {
         />
       </div>
       <p>Olá {input}</p>
-      <p>Olhe o console</p>
+      <p>Observe o console!</p>
     </div>
   );
 }
