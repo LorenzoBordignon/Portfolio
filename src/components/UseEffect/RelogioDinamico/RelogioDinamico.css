@@ -1,13 +1,22 @@
 .relogio-dinamico {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  color: var(--primary-color);
+  align-items: flex-start;
   gap: 1rem;
   width: 100%;
 }
 
 .relogio-dinamico h3 {
-  font-size: clamp(1.5rem, 4vw, 2rem);
-  margin-bottom: 1rem;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.relogio-dinamico h4 {
+  padding: 1rem 1.1rem;
+  border-radius: 1rem;
+  background-color: var(--accent-color);
+  color: var(--accent-contrast-color);
+  font-family: var(--font-mono);
+  font-size: clamp(1.3rem, 3vw, 1.9rem);
+  box-shadow: 0 16px 36px rgba(var(--shadow-color), 0.18);
 }

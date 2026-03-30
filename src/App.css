@@ -1,6 +1,6 @@
 .app-shell {
-  background-color: var(--background-color);
-  color: var(--highlight-color);
+  background-color: transparent;
+  color: var(--primary-color);
   display: grid;
   grid-template-columns: 0 minmax(0, 1fr);
   grid-template-rows: auto minmax(0, 1fr);
@@ -14,7 +14,7 @@
 }
 
 .app-shell.app-shell-menu-open {
-  grid-template-columns: 12rem minmax(0, 1fr);
+  grid-template-columns: 16.5rem minmax(0, 1fr);
 }
 
 .app-shell .header {
@@ -39,12 +39,14 @@
   overflow-x: hidden;
   overflow-y: auto;
   scroll-behavior: smooth;
-  background-color: var(--secondary-color);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(246, 247, 251, 0.88)),
+    radial-gradient(circle at top, rgba(17, 24, 39, 0.05), transparent 38%);
   border-left: none;
 }
 
 .app-shell.app-shell-menu-open .main-page {
-  border-left: 2px solid var(--highlight-color);
+  border-left: 1px solid var(--border-color);
 }
 
 .main-page::-webkit-scrollbar {
@@ -56,14 +58,14 @@
 }
 
 .main-page::-webkit-scrollbar-thumb {
-  background-color: var(--primary-color);
+  background-color: rgba(17, 24, 39, 0.22);
   border-radius: 999px;
   border: 2px solid transparent;
 }
 
 .main-page {
   scrollbar-width: thin;
-  scrollbar-color: var(--primary-color) transparent;
+  scrollbar-color: rgba(17, 24, 39, 0.22) transparent;
 }
 
 @media (max-width: 768px) {

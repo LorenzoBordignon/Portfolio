@@ -11,8 +11,10 @@ export function PageSectionGroup({
       <h2 className="page-title" id={sectionGroupId}>
         {sectionGroupTitle}
       </h2>
-      {Children.map(children, (child) => (
-        <section className="page-section">{child}</section>
+      {Children.map(children, (child, index) => (
+        <section className="page-section" key={child?.key ?? index}>
+          {child}
+        </section>
       ))}
     </div>
   );

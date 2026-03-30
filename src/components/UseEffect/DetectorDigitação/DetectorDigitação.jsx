@@ -10,8 +10,9 @@ export function DetectorDigitacao() {
     <div className="detector-digitacao">
       <h3>Detector de Digitacao</h3>
       <div className="detector-digitacao__insert">
-        <label htmlFor="">Digite Algo</label>
+        <label htmlFor="detector-digitacao-input">Digite Algo</label>
         <input
+          id="detector-digitacao-input"
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
