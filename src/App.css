@@ -40,13 +40,13 @@
   overflow-y: auto;
   scroll-behavior: smooth;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.72), rgba(246, 247, 251, 0.88)),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.72),
+      rgba(246, 247, 251, 0.88)
+    ),
     radial-gradient(circle at top, rgba(17, 24, 39, 0.05), transparent 38%);
   border-left: none;
-}
-
-.app-shell.app-shell-menu-open .main-page {
-  border-left: 1px solid var(--border-color);
 }
 
 .main-page::-webkit-scrollbar {
