@@ -1,5 +1,6 @@
+import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
-
+import { appRoutes } from "../../../app/routes";
 import "./Header.css";
 
 export function Header({ isMenuOpen, onToggleMenu, nomePortfolio }) {
@@ -16,7 +17,9 @@ export function Header({ isMenuOpen, onToggleMenu, nomePortfolio }) {
         >
           <GiHamburgerMenu />
         </button>
-        {nomePortfolio}
+        <Link className="header-home-link" to={appRoutes.home}>
+          {nomePortfolio}
+        </Link>
       </div>
     </header>
   );

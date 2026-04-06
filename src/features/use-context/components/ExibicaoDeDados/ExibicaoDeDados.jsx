@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import "./ExibicaoDeDados.css";
-import { FormularioDeDadosContext } from "../../../context/FormularioDeDadosContext";
+import { FormularioDeDadosContext } from "../../../../context/FormularioDeDadosContext";
 
 export function ExibicaoDeDados() {
   const { dadosFormulario } = useContext(FormularioDeDadosContext);

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import "./NomeHerdado.css";
-import { NomeHerdadoContext } from "../../../context/NomeHerdadoContext";
+import { NomeHerdadoContext } from "../../../../context/NomeHerdadoContext";
 
 export function NomeHerdado() {
   const nomeHerdadoDados = useContext(NomeHerdadoContext);

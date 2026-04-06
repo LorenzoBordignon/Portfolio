@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import "./FormularioDeDados.css";
-import { FormularioDeDadosContext } from "../../../context/FormularioDeDadosContext";
+import { FormularioDeDadosContext } from "../../../../context/FormularioDeDadosContext";
 
 export function FormularioDeDados() {
   const { setDadosFormulario } = useContext(FormularioDeDadosContext);
@@ -18,11 +18,17 @@ export function FormularioDeDados() {
   }
   return (
     <div className="formulario-dados">
-      <h3>Fomulário de Dados</h3>
-      <form onSubmit={(e) => e.preventDefault()}>
+      <h3>Formulário de Dados</h3>
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          enviarForm(dadosDigitados);
+        }}
+      >
         <div className="insert-group">
           <label htmlFor="input-nome">Nome</label>
           <input
+            id="input-nome"
             type="text"
             name="input-nome"
             value={dadosDigitados.nome}
@@ -37,6 +43,7 @@ export function FormularioDeDados() {
         <div className="insert-group">
           <label htmlFor="input-sobrenome">Sobrenome</label>
           <input
+            id="input-sobrenome"
             type="text"
             name="input-sobrenome"
             value={dadosDigitados.sobrenome}
@@ -51,6 +58,7 @@ export function FormularioDeDados() {
         <div className="insert-group">
           <label htmlFor="input-idade">Idade</label>
           <input
+            id="input-idade"
             type="number"
             name="input-idade"
             value={dadosDigitados.idade}
@@ -62,10 +70,7 @@ export function FormularioDeDados() {
             }
           />
         </div>
-        <button
-          className="btn btn-primary"
-          onClick={() => enviarForm(dadosDigitados)}
-        >
+        <button className="btn btn-primary" type="submit">
           Enviar
         </button>
       </form>

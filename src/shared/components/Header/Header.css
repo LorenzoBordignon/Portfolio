@@ -25,6 +25,10 @@
   letter-spacing: -0.03em;
 }
 
+.header-home-link {
+  text-decoration: none;
+}
+
 .header-menu-toggle {
   display: inline-flex;
   align-items: center;
