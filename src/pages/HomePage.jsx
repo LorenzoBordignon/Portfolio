@@ -8,11 +8,24 @@ export function HomePage() {
 
   return (
     <Page
-      eyebrow="Portfólio React"
-      title="Uma trilha por temas, em vez de uma página única gigante"
-      description="Agora o projeto está organizado por áreas claras: visão geral, sobre e páginas separadas para cada hook estudado."
+      eyebrow="Portfólio"
+      title="Seja bem-vindo(a) ao meu portfólio"
+      description="Sinta-se à vontade para explorar os módulos do projeto"
     >
-      <PageSectionGroup title="Explorar rotas">
+      <PageSectionGroup title="Qual o contexto do portfólio?">
+        <div className="page-copy-block">
+          <p>
+            Este portfólio foi criado como um espaço de estudo de React,
+            reunindo exemplos práticos para entender melhor como a biblioteca
+            funciona no dia a dia.
+          </p>
+          <p>
+            Aqui eu exploro funcionalidades usando pequenas implementações para
+            praticar cada conceito.
+          </p>
+        </div>
+      </PageSectionGroup>
+      <PageSectionGroup title="Explorar Módulos">
         <div className="page-route-grid">
           {routeLinks
             .filter((link) => link.to !== appRoutes.home)
@@ -22,20 +35,6 @@ export function HomePage() {
                 <p>{link.description}</p>
               </Link>
             ))}
-        </div>
-      </PageSectionGroup>
-
-      <PageSectionGroup title="Como a estrutura ficou">
-        <div className="page-copy-block">
-          <p>
-            O layout global fica em <code>layouts</code>, as rotas em{" "}
-            <code>app</code>, as páginas em <code>pages</code> e os blocos de
-            conteúdo em <code>features</code>.
-          </p>
-          <p>
-            Isso facilita evoluir o portfólio sem concentrar tudo em um único
-            componente.
-          </p>
         </div>
       </PageSectionGroup>
     </Page>
