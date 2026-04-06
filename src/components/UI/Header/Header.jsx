@@ -1,14 +1,8 @@
 import { GiHamburgerMenu } from "react-icons/gi";
-import { MdLogout } from "react-icons/md";
 
 import "./Header.css";
 
-export function Header({
-  isMenuOpen,
-  onToggleMenu,
-  nomePortfolio,
-  onLogoutSession,
-}) {
+export function Header({ isMenuOpen, onToggleMenu, nomePortfolio }) {
   return (
     <header className="header">
       <div className="header-title">
@@ -24,14 +18,6 @@ export function Header({
         </button>
         {nomePortfolio}
       </div>
-      <button
-        type="button"
-        className="header-logout-btn"
-        onClick={onLogoutSession}
-        title="Sair"
-      >
-        <MdLogout className="logout-icon" />
-      </button>
     </header>
   );
 }
