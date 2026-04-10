@@ -1,7 +1,13 @@
 import { NavLink as RouterNavLink } from "react-router-dom";
 import "./Navigation.css";
 
-export function NavigationLink({ linkName, linkAddress, onNavigate }) {
+export function NavigationLink({
+  indexLabel,
+  linkName,
+  linkAddress,
+  linkDescription,
+  onNavigate,
+}) {
   return (
     <li className="nav-page">
       <RouterNavLink
@@ -12,7 +18,11 @@ export function NavigationLink({ linkName, linkAddress, onNavigate }) {
         onClick={onNavigate}
         to={linkAddress}
       >
-        {linkName}
+        <span className="nav-page-index">{indexLabel}</span>
+        <span className="nav-page-copy">
+          <strong className="nav-page-label">{linkName}</strong>
+          <span className="nav-page-description">{linkDescription}</span>
+        </span>
       </RouterNavLink>
     </li>
   );

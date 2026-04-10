@@ -5,13 +5,23 @@ import { NavigationLink } from "./NavigationLink";
 export function Navigation({ isOpen, onClose }) {
   return (
     <nav className={`nav ${isOpen ? "nav-open" : ""}`} id="nav-page-group">
+      <div className="nav-intro">
+        <p className="nav-kicker">Navegacao</p>
+        <h2 className="nav-headline">
+          Conheca um pouco da minha historia, dos meus valores e da melhor
+          forma de falar comigo.
+        </h2>
+      </div>
+
       {navigationGroups.map((group) => (
         <div className="nav-group" key={group.title}>
           <p className="nav-title">{group.title}</p>
           <ul className="nav-page-group">
-            {group.links.map((link) => (
+            {group.links.map((link, index) => (
               <NavigationLink
                 key={link.to}
+                indexLabel={`0${index + 1}`}
+                linkDescription={link.description}
                 linkName={link.label}
                 linkAddress={link.to}
                 onNavigate={onClose}
@@ -20,6 +30,14 @@ export function Navigation({ isOpen, onClose }) {
           </ul>
         </div>
       ))}
+
+      <div className="nav-promo">
+        <span className="nav-promo-label">Tente outra vez</span>
+        <p>
+          Este espaco foi feito para apresentar quem eu sou, o que valorizo e o
+          que venho construindo.
+        </p>
+      </div>
     </nav>
   );
 }

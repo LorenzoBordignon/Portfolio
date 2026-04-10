@@ -1,4 +1,6 @@
 .app-shell {
+  position: relative;
+  isolation: isolate;
   background-color: transparent;
   color: var(--primary-color);
   display: grid;
@@ -14,7 +16,7 @@
 }
 
 .app-shell.app-shell-menu-open {
-  grid-template-columns: 16.5rem minmax(0, 1fr);
+  grid-template-columns: 19rem minmax(0, 1fr);
 }
 
 .app-shell .header {
@@ -29,6 +31,58 @@
   border-left: none;
 }
 
+.app-shell-backdrop {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.app-shell-glow {
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(50px);
+  opacity: 0.6;
+  animation: shell-float 18s ease-in-out infinite;
+}
+
+.app-shell-glow-primary {
+  top: -10rem;
+  right: -8rem;
+  width: 28rem;
+  height: 28rem;
+  background: var(--theme-glow-primary);
+}
+
+.app-shell-glow-secondary {
+  bottom: -12rem;
+  left: -8rem;
+  width: 30rem;
+  height: 30rem;
+  background: var(--theme-glow-secondary);
+  animation-duration: 22s;
+  animation-direction: reverse;
+}
+
+.app-shell-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(
+      var(--body-grid-color) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      var(--body-grid-color) 1px,
+      transparent 1px
+    );
+  background-size: 88px 88px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.56), transparent);
+  opacity: 0.55;
+}
+
 .main-page {
   grid-area: main;
   display: flex;
@@ -39,13 +93,7 @@
   overflow-x: hidden;
   overflow-y: auto;
   scroll-behavior: smooth;
-  background:
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.72),
-      rgba(246, 247, 251, 0.88)
-    ),
-    radial-gradient(circle at top, rgba(17, 24, 39, 0.05), transparent 38%);
+  background: var(--main-page-background);
   border-left: none;
 }
 
@@ -58,14 +106,25 @@
 }
 
 .main-page::-webkit-scrollbar-thumb {
-  background-color: rgba(17, 24, 39, 0.22);
+  background-color: var(--scrollbar-color);
   border-radius: 999px;
   border: 2px solid transparent;
 }
 
 .main-page {
   scrollbar-width: thin;
-  scrollbar-color: rgba(17, 24, 39, 0.22) transparent;
+  scrollbar-color: var(--scrollbar-color) transparent;
+}
+
+@keyframes shell-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(0, 24px, 0) scale(1.08);
+  }
 }
 
 @media (max-width: 768px) {
@@ -82,6 +141,10 @@
 
   .app-shell.app-shell-menu-open {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .app-shell-grid {
+    background-size: 44px 44px;
   }
 
   .main-page {
