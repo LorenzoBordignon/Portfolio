@@ -1,39 +1,32 @@
 export const appRoutes = {
   home: "/",
   sobre: "/sobre",
-  projetos: "/projetos",
   contato: "/contato",
 };
 
 export const routeSegments = {
   sobre: "sobre",
-  projetos: "projetos",
   contato: "contato",
 };
 
 export const navigationGroups = [
   {
-    title: "Portfólio",
+    title: "Portifolio",
     links: [
       {
         to: appRoutes.home,
-        label: "Início",
-        description: "Visão geral do portfolio histórico.",
+        label: "Inicio",
+        description: "Seja bem-vindo ao meu portifolio.",
       },
       {
         to: appRoutes.sobre,
         label: "Sobre",
-        description: "Trajetória, resumo profissional e base da apresentação.",
-      },
-      {
-        to: appRoutes.projetos,
-        label: "Projetos",
-        description: "Espaço para reunir cases, demos e entregas principais.",
+        description: "Quem sou eu?",
       },
       {
         to: appRoutes.contato,
         label: "Contato",
-        description: "Canais profissionais e convite para conversa.",
+        description: "Entre em contato comigo.",
       },
     ],
   },

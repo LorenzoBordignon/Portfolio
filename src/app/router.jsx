@@ -3,7 +3,6 @@ import { AppLayout } from "../layouts/AppLayout";
 import { ContatoPage } from "../pages/ContatoPage";
 import { HomePage } from "../pages/HomePage";
 import { NotFoundPage } from "../pages/NotFoundPage";
-import { ProjetosPage } from "../pages/ProjetosPage";
 import { SobrePage } from "../pages/SobrePage";
 import { appRoutes, routeSegments } from "./routes";
 
@@ -19,10 +18,6 @@ export const router = createBrowserRouter([
       {
         path: routeSegments.sobre,
         element: <SobrePage />,
-      },
-      {
-        path: routeSegments.projetos,
-        element: <ProjetosPage />,
       },
       {
         path: routeSegments.contato,
