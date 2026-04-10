@@ -1,12 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import { AppLayout } from "../layouts/AppLayout";
+import { ContatoPage } from "../pages/ContatoPage";
 import { HomePage } from "../pages/HomePage";
 import { NotFoundPage } from "../pages/NotFoundPage";
+import { ProjetosPage } from "../pages/ProjetosPage";
 import { SobrePage } from "../pages/SobrePage";
-import { UseContextPage } from "../pages/hooks/UseContextPage";
-import { UseEffectPage } from "../pages/hooks/UseEffectPage";
-import { UseStatePage } from "../pages/hooks/UseStatePage";
-import { appRoutes } from "./routes";
+import { appRoutes, routeSegments } from "./routes";
 
 export const router = createBrowserRouter([
   {
@@ -18,20 +17,16 @@ export const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: appRoutes.sobre.slice(1),
+        path: routeSegments.sobre,
         element: <SobrePage />,
       },
       {
-        path: appRoutes.useState.slice(1),
-        element: <UseStatePage />,
+        path: routeSegments.projetos,
+        element: <ProjetosPage />,
       },
       {
-        path: appRoutes.useEffect.slice(1),
-        element: <UseEffectPage />,
-      },
-      {
-        path: appRoutes.useContext.slice(1),
-        element: <UseContextPage />,
+        path: routeSegments.contato,
+        element: <ContatoPage />,
       },
       {
         path: "*",

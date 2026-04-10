@@ -39,7 +39,7 @@ export function AppLayout() {
       <Header
         isMenuOpen={isMenuOpen}
         onToggleMenu={toggleMenu}
-        nomePortfolio="Portfólio Lorenzo"
+        nomePortfolio="Portfolio Lorenzo Historico"
       />
       <Navigation isOpen={isMenuOpen} onClose={closeMenu} />
       <main className="main-page">

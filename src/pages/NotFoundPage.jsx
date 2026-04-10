@@ -7,14 +7,14 @@ export function NotFoundPage() {
   return (
     <Page
       eyebrow="Rota não encontrada"
-      title="Essa página não existe no portfólio"
-      description="A navegação principal continua disponível, mas você também pode voltar direto para a visão geral."
+      title="Essa página não existe neste histórico"
+      description="O projeto agora está arquivado como referência, então a navegação foi mantida de forma mais enxuta."
     >
       <PageSectionGroup title="Voltar para uma rota válida">
         <div className="page-copy-block">
           <p>
-            O caminho acessado não corresponde a nenhuma página cadastrada no
-            roteador atual.
+            O caminho acessado não corresponde a nenhuma página cadastrada neste
+            momento.
           </p>
           <Link className="page-inline-link" to={appRoutes.home}>
             Ir para a visão geral

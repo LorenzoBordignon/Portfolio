@@ -1,44 +1,39 @@
 export const appRoutes = {
   home: "/",
   sobre: "/sobre",
-  useState: "/hooks/use-state",
-  useEffect: "/hooks/use-effect",
-  useContext: "/hooks/use-context",
+  projetos: "/projetos",
+  contato: "/contato",
+};
+
+export const routeSegments = {
+  sobre: "sobre",
+  projetos: "projetos",
+  contato: "contato",
 };
 
 export const navigationGroups = [
   {
-    title: "Início",
+    title: "Portfólio",
     links: [
       {
         to: appRoutes.home,
-        label: "Visão Geral",
-        description: "Resumo do portfólio e acesso rápido às trilhas.",
+        label: "Início",
+        description: "Visão geral do portfolio histórico.",
       },
       {
         to: appRoutes.sobre,
         label: "Sobre",
-        description: "Biografia e formações.",
-      },
-    ],
-  },
-  {
-    title: "React Hooks",
-    links: [
-      {
-        to: appRoutes.useState,
-        label: "UseState",
-        description: "Exemplos de estado local e interações simples.",
+        description: "Trajetória, resumo profissional e base da apresentação.",
       },
       {
-        to: appRoutes.useEffect,
-        label: "UseEffect",
-        description: "Efeitos colaterais, relógio e persistência.",
+        to: appRoutes.projetos,
+        label: "Projetos",
+        description: "Espaço para reunir cases, demos e entregas principais.",
       },
       {
-        to: appRoutes.useContext,
-        label: "UseContext",
-        description: "Compartilhamento de dados com contexto.",
+        to: appRoutes.contato,
+        label: "Contato",
+        description: "Canais profissionais e convite para conversa.",
       },
     ],
   },
