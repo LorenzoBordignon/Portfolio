@@ -11,12 +11,12 @@ export const routeSegments = {
 
 export const navigationGroups = [
   {
-    title: "Portifolio",
+    title: "Portfólio",
     links: [
       {
         to: appRoutes.home,
-        label: "Inicio",
-        description: "Seja bem-vindo ao meu portifolio.",
+        label: "Início",
+        description: "Seja bem-vindo ao meu portfólio.",
       },
       {
         to: appRoutes.sobre,

@@ -6,9 +6,9 @@ export function Navigation({ isOpen, onClose }) {
   return (
     <nav className={`nav ${isOpen ? "nav-open" : ""}`} id="nav-page-group">
       <div className="nav-intro">
-        <p className="nav-kicker">Navegacao</p>
+        <p className="nav-kicker">Navegação</p>
         <h2 className="nav-headline">
-          Conheca um pouco da minha historia, dos meus valores e da melhor
+          Conheça um pouco da minha história, dos meus valores e da melhor
           forma de falar comigo.
         </h2>
       </div>
@@ -30,14 +30,6 @@ export function Navigation({ isOpen, onClose }) {
           </ul>
         </div>
       ))}
-
-      <div className="nav-promo">
-        <span className="nav-promo-label">Tente outra vez</span>
-        <p>
-          Este espaco foi feito para apresentar quem eu sou, o que valorizo e o
-          que venho construindo.
-        </p>
-      </div>
     </nav>
   );
 }

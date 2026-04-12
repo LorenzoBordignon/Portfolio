@@ -67,8 +67,8 @@ export function AppLayout() {
         onChangeTheme={changeTheme}
         onToggleMenu={toggleMenu}
         nomePortfolio="Lorenzo Bordignon"
-        portfolioKicker="Tente outra vez"
-        projectStatusLabel="Desenvolvedor Web - Junior | loading para Pleno"
+        portfolioKicker="Portfólio"
+        projectStatusLabel="Desenvolvedor Web - Júnior"
         themeName={themeName}
       />
       <Navigation isOpen={isMenuOpen} onClose={closeMenu} />

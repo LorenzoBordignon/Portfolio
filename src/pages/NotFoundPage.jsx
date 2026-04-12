@@ -7,32 +7,32 @@ import { PageSectionGroup } from "../shared/components/Page/PageSectionGroup";
 export function NotFoundPage() {
   return (
     <Page
-      eyebrow="Pagina nao encontrada"
-      title="A pagina que voce tentou abrir nao faz parte deste portifolio."
-      description="Use a navegacao principal para voltar para inicio, sobre ou contato."
+      eyebrow="Página não encontrada"
+      title="A página que você tentou abrir não faz parte deste portfólio."
+      description="Use a navegação principal para voltar para início, sobre ou contato."
       actions={
         <Link className="btn btn-primary" to={appRoutes.home}>
-          Voltar para o inicio
+          Voltar para o início
           <FiArrowLeft />
         </Link>
       }
       heroStats={[
-        { value: "404", label: "pagina fora do mapa" },
-        { value: "3", label: "paginas principais ativas" },
+        { value: "404", label: "página fora do mapa" },
+        { value: "3", label: "páginas principais ativas" },
       ]}
     >
       <PageSectionGroup
         eyebrow="Redirecionar"
         title="Retome o percurso principal"
-        description="As paginas visiveis deste portifolio estao prontas para receber suas informacoes pessoais."
+        description="As páginas visíveis deste portfólio estão prontas para receber suas informações pessoais."
       >
         <div className="page-copy-block">
           <p>
-            O caminho acessado nao corresponde a nenhuma pagina cadastrada neste
+            O caminho acessado não corresponde a nenhuma página cadastrada neste
             momento.
           </p>
           <Link className="page-inline-link" to={appRoutes.home}>
-            Ir para o inicio
+            Ir para o início
           </Link>
         </div>
       </PageSectionGroup>

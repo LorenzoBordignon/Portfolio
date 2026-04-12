@@ -10,70 +10,70 @@ export function SobrePage() {
       icon: <FiUser />,
       title: "Quem sou",
       description:
-        "Sou de Curitiba, tenho 18 anos e sigo construindo minha caminhada entre tecnologia, administracao e autodesenvolvimento.",
+        "Sou de Curitiba, tenho 18 anos e sigo construindo minha caminhada entre tecnologia, administração e autodesenvolvimento.",
       bullets: [
-        "Desenvolvedor Web e estudante de Administracao",
+        "Desenvolvedor Web e estudante de Administração",
         "Atuo hoje na Golden IT",
-        "Programacao para mim e profissao, hobby e parte do futuro que quero construir",
+        "Programação para mim é profissão, hobby e parte do futuro que quero construir",
       ],
     },
     {
       icon: <FiCompass />,
-      title: "Trajetoria",
+      title: "Trajetória",
       description:
-        "A tecnologia entrou cedo na minha vida, muito por influencia do meu pai, e desde entao passou a ocupar um lugar central no meu caminho.",
+        "A tecnologia entrou cedo na minha vida, muito por influência do meu pai, e desde então passou a ocupar um lugar central no meu caminho.",
       bullets: [
-        "Comecei na programacao aos 13 anos",
-        "Entrei na empresa como estagiario aos 15 e fui efetivado aos 17",
-        "Aos 18 anos entrei na UFPR para cursar Administracao",
+        "Comecei na programação aos 13 anos",
+        "Entrei na empresa como estagiário aos 15 e fui efetivado aos 17",
+        "Aos 18 anos entrei na UFPR para cursar Administração",
       ],
     },
     {
       icon: <FiHeart />,
       title: "Valores",
       description:
-        "Familia e fe sao a base da minha forma de viver, trabalhar e olhar para o futuro.",
+        "Família e fé são a base da minha forma de viver, trabalhar e olhar para o futuro.",
       bullets: [
-        "Compaixao e empatia como qualidades humanas centrais",
+        "Compaixão e empatia como qualidades humanas centrais",
         "Foco e trabalho em equipe como pilares profissionais",
         "Lealdade, respeito e energia positiva no dia a dia",
       ],
     },
   ];
   const journeySteps = [
-    "2020 - comecei na programacao aos 13 anos e percebi que esse caminho faria parte da minha vida.",
-    "Aos 15 anos - iniciei na empresa como estagiario e vivi a tecnologia para alem dos estudos.",
-    "Aos 17 anos - fui efetivado, um marco importante na minha confianca profissional.",
-    "Aos 18 anos - entrei na UFPR para cursar Administracao e ampliar minha visao de negocio e de pessoas.",
+    "2020 - comecei na programação aos 13 anos e percebi que esse caminho faria parte da minha vida.",
+    "Aos 15 anos - iniciei na empresa como estagiário e vivi a tecnologia para além dos estudos.",
+    "Aos 17 anos - fui efetivado, um marco importante na minha confiança profissional.",
+    "Aos 18 anos - entrei na UFPR para cursar Administração e ampliar minha visão de negócio e de pessoas.",
   ];
   const aboutGroups = [
     {
       title: "Interesses",
       items: [
         "Tecnologia",
-        "Administracao",
+        "Administração",
         "Autodesenvolvimento",
         "Jogos",
         "Esportes ao ar livre",
       ],
     },
     {
-      title: "Referencias",
+      title: "Referências",
       items: [
         "Meu pai",
-        "Minha mae",
-        "Familia",
-        "Fe",
-        "Comunidade Catolica",
+        "Minha mãe",
+        "Família",
+        "Fé",
+        "Comunidade Católica",
       ],
     },
     {
       title: "O que estou construindo",
       items: [
         "Conhecimento",
-        "Base solida",
-        "Mais confianca",
-        "Uma historia de respeito",
+        "Base sólida",
+        "Mais confiança",
+        "Uma história de respeito",
       ],
     },
   ];
@@ -81,17 +81,17 @@ export function SobrePage() {
     {
       title: "Jeito de trabalhar",
       description:
-        "Gosto de ambientes com paz, tranquilidade e energia positiva. Trabalho melhor com foco, responsabilidade, boas relacoes e espaco para crescer em equipe.",
+        "Gosto de ambientes com paz, tranquilidade e energia positiva. Trabalho melhor com foco, responsabilidade, boas relações e espaço para crescer em equipe.",
     },
     {
       title: "O que me inspira",
       description:
-        "Minhas maiores referencias vem de casa. Meu pai e minha mae moldam muito da pessoa e do profissional que quero ser.",
+        "Minhas maiores referências vêm de casa. Meu pai e minha mãe moldam muito da pessoa e do profissional que quero ser.",
     },
     {
       title: "Momento atual",
       description:
-        "Hoje sigo desenvolvendo solucoes web, estudando Administracao e fortalecendo minha base tecnica com tecnologias como React, JavaScript, TypeScript e Next.js.",
+        "Hoje sigo desenvolvendo soluções web, estudando Administração e fortalecendo minha base técnica com tecnologias como React, JavaScript, TypeScript e Next.js.",
     },
     {
       title: "Mensagem final",
@@ -103,8 +103,8 @@ export function SobrePage() {
   return (
     <Page
       eyebrow="Sobre"
-      title="Minha historia e feita de trabalho, familia, fe e vontade de crescer."
-      description="Sou de Curitiba, tenho 18 anos e sigo construindo minha caminhada entre programacao, administracao e autodesenvolvimento. A tecnologia entrou cedo na minha vida, muito por influencia do meu pai, e hoje faz parte do presente e do futuro que quero honrar."
+      title="Minha história é feita de trabalho, família, fé e vontade de crescer."
+      description="Sou de Curitiba, tenho 18 anos e sigo construindo minha caminhada entre programação, administração e autodesenvolvimento. A tecnologia entrou cedo na minha vida, muito por influência do meu pai, e hoje faz parte do presente e do futuro que quero honrar."
       actions={
         <>
           <Link className="btn btn-primary" to={appRoutes.contato}>
@@ -112,13 +112,13 @@ export function SobrePage() {
             <FiArrowRight />
           </Link>
           <Link className="btn btn-secondary" to={appRoutes.home}>
-            Inicio
+            Início
           </Link>
         </>
       }
       heroStats={[
-        { value: "13 anos", label: "inicio na programacao" },
-        { value: "17 anos", label: "efetivacao na Golden IT" },
+        { value: "13 anos", label: "início na programação" },
+        { value: "17 anos", label: "efetivação na Golden IT" },
         { value: "18 anos", label: "entrada na UFPR" },
       ]}
       heroAside={
@@ -126,8 +126,8 @@ export function SobrePage() {
           <span className="page-card-kicker">Minha caminhada</span>
           <h3>Meu presente e meu passado constroem quem quero me tornar.</h3>
           <p>
-            Sigo guiado por familia, fe, foco e pelo desejo de construir uma
-            historia de respeito, sem perder a naturalidade no caminho.
+            Sigo guiado por família, fé, foco e pelo desejo de construir uma
+            história de respeito, sem perder a naturalidade no caminho.
           </p>
           <div className="page-chip-list">
             <span className="page-chip">Focado</span>
@@ -138,9 +138,9 @@ export function SobrePage() {
       }
     >
       <PageSectionGroup
-        eyebrow="Apresentacao"
+        eyebrow="Apresentação"
         title="Os blocos que melhor contam quem eu sou"
-        description="Aqui estao a minha base pessoal, a minha historia e os valores que me acompanham."
+        description="Aqui estão a minha base pessoal, a minha história e os valores que me acompanham."
       >
         <div className="page-grid page-grid-wide">
           {storyCards.map((card) => (
@@ -162,9 +162,9 @@ export function SobrePage() {
       </PageSectionGroup>
 
       <PageSectionGroup
-        eyebrow="Trajetoria"
+        eyebrow="Trajetória"
         title="Uma linha do tempo da minha caminhada"
-        description="Prefiro contar essa historia de forma cronologica, do comeco da programacao ate o momento atual."
+        description="Prefiro contar essa história de forma cronológica, do começo da programação até o momento atual."
       >
         <div className="page-grid">
           {journeySteps.map((step, index) => (
@@ -180,8 +180,8 @@ export function SobrePage() {
       </PageSectionGroup>
 
       <PageSectionGroup
-        eyebrow="Topicos"
-        title="Interesses, referencias e direcao"
+        eyebrow="Tópicos"
+        title="Interesses, referências e direção"
         description="Esses grupos ajudam a mostrar o que me interessa, quem me inspira e o que quero construir."
       >
         <div className="page-grid">
@@ -202,7 +202,7 @@ export function SobrePage() {
 
       <PageSectionGroup
         eyebrow="Notas"
-        title="Pontos que complementam a minha apresentacao"
+        title="Pontos que complementam a minha apresentação"
         description="Aqui entram a forma como trabalho, o que me inspira e o momento que estou vivendo."
       >
         <div className="page-grid">
@@ -217,10 +217,10 @@ export function SobrePage() {
 
       <section className="page-cta-panel">
         <div className="page-cta-copy">
-          <span className="page-card-kicker">Proximo passo</span>
-          <h2>Se quiser falar comigo, a pagina de contato reune os melhores caminhos.</h2>
+          <span className="page-card-kicker">Próximo passo</span>
+          <h2>Se quiser falar comigo, a página de contato reúne os melhores caminhos.</h2>
           <p>
-            La voce encontra meus e-mails, meu LinkedIn, meu GitHub e a forma
+            Lá você encontra meus e-mails, meu LinkedIn, meu GitHub e a forma
             como prefiro ser encontrado.
           </p>
         </div>
