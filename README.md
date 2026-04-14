@@ -1,13 +1,10 @@
-# Portfolio Lorenzo Historico
+# Portfolio Lorenzo
 
-Arquivo historico do portfolio pessoal em React.
-
-Este repositório foi mantido como registro da estrutura anterior do projeto.
+Portfolio pessoal em React.
 
 Hoje ele serve como referência histórica de:
 
 - apresentação pessoal
-- projetos e cases
-- formas de contato
+- trabalhando para exibir meus projetos
 
-O conteúdo de estudos e experimentos em React foi movido para o repositório local `../estudos-react`.
+O conteúdo de estudos e experimentos em React foi movido para o repositório `../estudos-react`.
